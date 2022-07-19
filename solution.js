@@ -106,16 +106,11 @@ console.log(getFirstWord("Word cutter will cut the first word"));
 //#10
 console.log("================================");
 
-function wordRepeater3(someStr) {
+const wordRepeater3 = (someStr) => {
   let wordArr = someStr.split(" ");
-  let wordCounter = 1;
   let finalWords = "";
 
-  for (i = 0; i < someStr.length; i++) {
-    if (someStr[i] === " ") {
-      wordCounter += 1;
-    }
-  }
+  const wordCounter = someStr.split(" ").length - 1;git add .Array
 
   for (let i = 0; i < wordCounter; i++) {
     for (let j = 0; j < wordCounter; j++) {
@@ -124,7 +119,7 @@ function wordRepeater3(someStr) {
   }
 
   return finalWords;
-}
+};
 
 console.log(wordRepeater3("This was not easy sdf"));
 
@@ -198,7 +193,7 @@ const includesO = (someStr) => {
 
 console.log(includesO("aoray"));
 
-//
+//#16
 
 const cat = (someStr) => {
   let newStr = "";
